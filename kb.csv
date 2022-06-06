@@ -1,0 +1,12 @@
+flower(x) -> plant(x)
+plant(x) -> root(x)
+tree(x) -> plant(x)
+flower(x) -> petal(x)
+tree(x) -> trunk(x)
+flower(x) -> stem(x)
+
+flower(rose)
+flower(daffodil)
+
+tree(dragonTree)
+tree(moneyTree)

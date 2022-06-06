@@ -1,0 +1,176 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and Politeness -->
+    
+<category> <pattern> HELLO </pattern>
+  <template> 
+      <random><li> Hi, Welcome to Michelle's plant shop. How can I help you today?</li>
+              <li> Hello there! Welcome to Michelle's plant shop. What can I help you today? </li>
+      </random>
+  </template> 
+</category>
+
+<category> <pattern> HI </pattern>
+  <template> 
+      <random><li> Hi, Welcome to Michelle's plant shop. How can I help you today?</li>
+              <li> Hello there! Welcome to Michelle's plant shop. What can I help you today? </li>
+      </random>
+  </template> 
+</category>
+
+<category> <pattern> HI * </pattern>
+  <template>HELLO</template> </category>
+
+
+<!-- Thank you -->   
+<category> <pattern> THANKS </pattern>
+  <template>You are welcome. Thank you to buy plants from us!</template></category>
+
+<category> <pattern> THANKS2 </pattern>
+  <template>You are welcome. Thank you to buy plants from us!</template></category>
+
+<category> <pattern> THANK YOU </pattern>
+  <template>THANKS. Thank you to buy plants from us!</template></category>
+
+<category> <pattern> CHEERS </pattern>
+  <template>Sure mate.</template></category>
+
+
+<!--<category> <pattern> I WANT TO BUY ROSE </pattern>
+ <template> Great! How many Rose do you want? 10, 20, 50 (you need to mention about PLANT NAME and NUMBER. )</template></category>
+
+<category> <pattern> I WANT TO BUY DAFFODIL </pattern>
+ <template> Great! How many Rose do you want? 10, 20, 50 (you need to mention about PLANT NAME and NUMBER. )</template></category>
+
+<category> <pattern> I WANT TO BUY ROSE </pattern>
+ <template> Great! How many Rose do you want? 10, 20, 50 (you need to mention about PLANT NAME and NUMBER. )</template></category>
+
+<category> <pattern> I WANT TO BUY ROSE </pattern>
+ <template> Great! How many Rose do you want? 10, 20, 50 (you need to mention about PLANT NAME and NUMBER. )</template></category>
+-->
+
+<!-- What is * -->
+<category> <pattern> WHAT IS A DAFFODIL </pattern>
+ <template> It is a flower and any of various plants (genus Narcissus) of the lily family with a typically yellow flower having a large, trumpet like corona</template></category>
+
+
+<category> <pattern> WHAT IS A ROSE </pattern>
+ <template> A prickly bush or shrub that typically bears red, pink, yellow, or white fragrant flowers, native to north temperate regions and widely grown as an ornamental </template></category>
+    
+<category> <pattern> WHAT IS A DRAGON TREE </pattern>
+ <template> Dracaena marginata, more commonly known as a dragon tree, is an attractive plant with green sword-like, red-edged leaves. Native to Madagascar, the eye-catching spiky tree is known as a great entry plant for household gardeners </template></category>
+
+<category> <pattern> WHAT IS A MONEY TREE </pattern>
+ <template> The Money Tree is a perfect indoor foliage plant to give your home a tropical feel. Native from Mexico to northern South America, the Money Tree is also very popular in Taiwan and other East Asian countries. </template></category>
+    
+
+
+<category><pattern>HOW MUCH IS ROSE </pattern>
+  <template>10 ROSE is 30 pounds, 20 ROSE is 55 pounds, 50 ROSE is 140 pounds</template>
+</category>
+    
+
+<category> <pattern>HOW MUCH IS DAFFODIL </pattern>
+  <template>
+	 10 DAFFODIL is 20 pounds, 20 DAFFODIL is 35 pounds, 50 DAFFODIL is 90 pounds
+  </template>
+</category>
+    
+
+<category> <pattern>HOW MUCH IS DRAGON TREE </pattern>
+  <template>
+	 1 DRAGON TREE is 15 pounds, 3 DRAGON TREE is 40 pounds, 5 DRAGON TREE is 70 pounds
+  </template>
+</category>
+    
+
+<category> <pattern>HOW MUCH IS MONEY TREE </pattern>
+  <template>
+	 1 MONEY TREE is 20 pounds, 3 MONEY TREEis 55 pounds, 5 MONEY TREE is 90 pounds
+  </template>
+</category>
+    
+ 
+ <!-- Logic input -->
+ <category><pattern> I KNOW THAT * IS *</pattern>
+   <template>#31$<star index="1"/> is <star index="2"/></template></category>
+
+ <category><pattern> CHECK THAT * IS *</pattern>
+   <template>#32$<star index="1"/> is <star index="2"/></template></category>
+    
+<category><pattern> I KNOW THAT * IS NOT *</pattern>
+    <template>#33$<star index="1"/> is not <star index="2"/></template></category>
+
+<category><pattern> CHECK THAT * IS NOT *</pattern>
+  <template>#34$<star index="1"/> is not <star index="2"/></template></category>
+    
+<category><pattern> I KNOW THAT * HAS *</pattern>
+    <template>#35$<star index="1"/> has <star index="2"/></template></category>
+
+<category><pattern> CHECK THAT * HAS *</pattern>
+  <template>#36$<star index="1"/> has <star index="2"/></template></category>
+
+<category><pattern> I KNOW THAT * HAS NOT *</pattern>
+    <template>#37$<star index="1"/> has not <star index="2"/></template></category>
+
+<category><pattern> CHECK THAT * HAS NOT *</pattern>
+  <template>#38$<star index="1"/> has not <star index="2"/></template></category>
+
+<!-- Fuzzy Logic -->
+<category><pattern>I WANT TO CHECK HOW FRESH IS THIS PLANT</pattern>
+  <template>#40$</template></category>
+<category><pattern>CAN YOU HELP ME CHECK HOW FRESH IS THIS PLANT</pattern>
+  <template>#40$</template></category>
+
+<!-- AI Image  -->
+<category><pattern>IMAGE CLASSIFICATION</pattern>
+  <template>#50$</template></category>
+
+
+<category><pattern>OBJECT DETECTION</pattern>
+  <template>#51$</template></category>
+<!-- Bye -->
+
+<category><pattern> BYE </pattern>
+  <template>#0$Bye! Nice talking to you. You take care now.</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE. See you next time again!</srai></template></category>
+
+<category><pattern> EXIT </pattern>
+  <template><srai>BYE. See you next time again!</srai></template></category>
+
+
+
+<!-- Weather API 
+<category><pattern> WHAT IS THE WEATHER LIKE IN * </pattern>
+  <template>#2$<star/></template></category>
+
+<category><pattern> HOW IS THE WEATHER IN * </pattern>
+  <template><srai>WHAT IS THE WEATHER LIKE IN <star/></srai></template></category>
+-->
+    
+    
+
+<!--- Wikipedia API 
+<category><pattern> WHAT IS A * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<category><pattern> WHAT IS AN * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> WHAT IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> DEFINE * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> WHO IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+-->
+
+<!-- Default reaction -->
+<category><pattern> * </pattern>
+  <template>#99$<star index="1"/></template></category>
+
+</aiml>
