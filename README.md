@@ -1,2 +1,2 @@
-# AI-ChatBot-PlantSho
+# AI-ChatBot-PlantShop
  
