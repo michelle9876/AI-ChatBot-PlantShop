@@ -1,6 +1,6 @@
 # AI-ChatBot-PlantShop
 
-https://youtu.be/TkPPVdUgzrU?si=GtmCq5GJRKwp6I1F![image](https://github.com/user-attachments/assets/3177867f-54ab-4254-b229-35a775f5084e)
+<iframe width="554" height="360" src="https://www.youtube.com/embed/TkPPVdUgzrU" title="AI-Chatbot-Plant Shop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### 프로젝트 개요
 
