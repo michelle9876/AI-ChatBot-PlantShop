@@ -1,5 +1,7 @@
 # AI-ChatBot-PlantShop
 
+### 프로젝트 데모 비디오 : 이미지 클릭!
+
 [![Video Label](http://img.youtube.com/vi/TkPPVdUgzrU/0.jpg)](https://youtu.be/TkPPVdUgzrU)
 
 ### 프로젝트 개요
