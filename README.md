@@ -1,5 +1,7 @@
 # AI-ChatBot-PlantShop
 
+https://youtu.be/TkPPVdUgzrU?si=GtmCq5GJRKwp6I1F![image](https://github.com/user-attachments/assets/3177867f-54ab-4254-b229-35a775f5084e)
+
 ### 프로젝트 개요
 
 **Michelle’s Plant Shop Chatbot**은 Michelle’s Plant Shop의 고객들이 꽃과 나무를 쉽게 구매할 수 있도록 설계된 인공지능 챗봇입니다. 이 챗봇은 다양한 AI 기술을 활용하여 고객의 질문에 응답하고, 식물의 신선도를 평가하며, 쇼핑 경험을 향상시키기 위한 기능을 제공합니다. 챗봇은 규칙 기반, 유사도 기반, 논리 기반 AI 모델을 사용하며, 퍼지 로직과 음성 인식 기능도 통합되어 있습니다.
